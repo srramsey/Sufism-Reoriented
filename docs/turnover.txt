@@ -1,0 +1,46 @@
+TURNOVER
+guest wifi password is VIMVF-URNDJ, expires in early July.  Mike will have to handle expiration/new password when that happens.
+
+Rehersal 1:
+Crestron MPC-M5, Sharp LC90, Ashly LX-3088 mixer, MA power sequencer
+relays turn the rack power sequencer on and off (momentary closure, 1 for on, 1 for off).  The original design had only 1 relay for this (closed=on,open=off) but that doesn't work, so we put what was on the other relay (power control of the speakers) on the "status" relay of the sequencer.  When the sequencer turns on, it closes 1-2-3-4-5-6-status relay, so speakers will come on after everything in the rack.
+Everything in the rack is pretty much just the sequencer and an ashly mixing board right now.  There is discussion of moving the MPC-M5 to the rack and adding a bluray player (and lots of other pipe dreams) but for now it's being built per the approved plans.
+MPC-M5 is POE, injector is in the rack.  Make sure they plug it into the "not controlled" on the back of the sequencer or in a wall jack so that turning the sequencer off doesn't also power down the MPC-M5.
+rs232 goes to a Sharp LC90.  I tested the module for the LC70 and it mostly worked, except it would occasionally report the wrong input.  This usually happened right after switching inputs, esp to cable.  It has something to do with the protocol, asking for input returns 'err' if cable is selected and the SIMPL+ sometimes interpreted that correctly but not after an input switch.  I wrote a holdoff, triggered by an input button press, that ignores reported input for about 30 seconds.  As is, I saw occasional misreports that corrected themselves within a few seconds, but I didn't want to totally ignore FB because right now it will show the correct input on the button panel even if you use the remote control or the buttons on the display (the module is on an automatic query cycle of about a minute, asking "on?", "aspect?", "mode?", "input?", etc).
+I originally had "display on/off" and "system on/off" buttons but changed it to "system on/off" only because the design of the system uses the display for switching between multiple audio sources (vid1 and vid2).  Those feed input 3 on the mixer.  I think 1 and 2 are from patches, didn't look at them much.  TV weirdness: it would not stay on vid1/vid2 originally, no video input, but simply plugging an unterminated RCA plug into the video input lets it stay on video.  Not sure how that's deciding what it'll allow but that's what worked.
+A decision has not yet been made regarding audio.  If you leave the built in speakers on, the output is line level (not affected by volume), but if you turn the built ins off, display "volume" controls the level of the output.  Since there's a volume at the mixer, I'd be inclined to leave the built ins enabled and always feed line level, let the mixer control volume, and turn the built in speakers' volumes down to 0 if they only want the wall speakers.  But if they disable built ins, you could add display vol up/down to the button panel (but then there's 2 level controls, 1 at display, 1 at mixer)
+There's a weird attenuator circuit for the 70v PA system.  We messed with it some and it seemed to work to control PA level when the override was toggled.  Hopefully Mike won't need any more programmer help with that...
+
+Classroom:
+Crestron MPC-M5, Sharp LC90
+They're still pulling wire but this is almost the same as Rehersal 1 so I copied the smw and commented out the audio section (relays for on/off), no sequencer.
+I heard the wall box is 1-gang, the MPC-M5 requires a 2-gang, but that's not really our problem, it's an installer problem.  Same with the display; I'm a little concerned that with the wall's arc the 90" may not actually reach the display mount unless it stands out from the wall, but I conveyed that to Mike and it's their problem.
+
+Rehersal 2:
+Crestron MPC-M5...  sort of
+This was supposed to be just like Rehersal 1 but they removed the display from this room, so there isn't really any point to having a 10-button 3-series processor in the room.  All it'll be doing is turning the power sequencer and speakers off and on.  Mike agrees that the crestron isn't really needed now so there may not be any programming in that room.
+
+Plaza, video production:
+Crestron TSW-1050's, PRO3
+I'm not sure what the touchpanels are doing here, maybe patching video/audio to the plates and some speakers?
+
+Prayer Hall:
+Crestron TSW-1050, PRO3, DM-RMC-SCALER-C's, Digital Projection Mercury 930's, Panasonic AW-HE130's, some fancy CAL speakers
+Probably a lot of audio/video patching control to do here.
+Cameras: I tested the Panasonic AW-PH300A module using rehersal 2's MPC-M5 (in the camtest folder) and the module does work with these cameras.  The din-8 rs232 is a wiring nightmare but Nate was able to make a good test cable for me to test the module, so if you have problems assume it's the wiring and work from there.
+Projectors: The Crestron Mercury 930 module does not speak the same language as the projectors.  I found and downloaded a manual, rs232 and tcp commands/responses are identical but they caution to never use both at the same time.  I think the plan right now is to use tcp.  Commands are pretty easy; they go like this:
+  *power ?[0x0D]  (responds with "ack power on" or "ack power off")
+  *power = on[0x0D] (turns it on)
+  *test.pattern = 5[0x0D] (sets to test pattern 5)
+  etc.
+The scaler has 2 cat plugs, 1 for DM and 1 will pass LAN from the DM (which is coming from the switcher in the rack).  So LAN is pretty funky; Cisco to MD16x16 through DM to scaler to projector, and then it gets even funkier...  at first I set LAN ip (192.168.10.81), and looked at its http control in a browser.  But it was blocking telnet to 192.168.10.81 7000, so I added a second control ip, 192.168.10.85 (proj's 1-4 are 84 through 87) and that ip allowed a tcp control connection and I could just type stuff from the protocol manual and it worked great.  I think that's the way to talk to these things, maybe modify some other module you have that will ask *power ? every so often, and can do on/off/switch to dvi.
+James and I were just looking at these inputs and the drawing says take hdmi from the scaler to dvi on the mercury.  Why not just hdmi to hdmi?  But we found both cables and it doesn't really matter as long as something feeds video from the scaler and you're always setting that input on startup of the projector.  Switching happens at the md16x16, not at the projector itself.
+Projector power: it plugs into the single output on the right side of the power control box.  There are 2 fan arrays, plugged into the left side of that box.  And there are 3 wires sticking out of the plate.  1 is for temperature sensing (the omega sensor sitting to the right of the power control box), 1 is for a power relay, and 1 is for fan sensing.  It works like this: if the projector is on, the fans are on (current sensor forces them on).  If the projector is off, the crestron can tell the fans to turn off with a 24v signal (digital on).  The current sensor has a dial for how much current triggers on/off, so those will probably need adjustment to not force fans on when projector is in standby.
+Wiring the beast:
+ current sensor just needs 24v, can be stolen from the Cresnet phoenix on the back of the PRO3.  It'll handle projector on/off turning fans on/off when it has power.
+ temp sensor needs 24v (cresnet again) and returns a variable voltage (to an IO on the PRO3), the manual has the relationship between voltage and temperature.  It's basically 1-5 volts = 0-135 F.  I don't know if Mark will want some sort of logging of this value or if it just displays in a pane on the touchpanel...
+ fan sensing is just taking voltage from one of the fan's power supplies, which tells us if it's on (0v) or on (12v).  It should come into an IO as an analog in, probably just drives a feedback signal.
+Relay wiring was wrong on projector 1, I think it was that the current sensor relay was powering fans when the projector was off, not on, and was fixed by moving a lead from NO to NC or something.  Just make sure when everything is wired, that a projector turning on turns the fans on too, and the projector off turns off the fans when the crestron allows it (digital high signal on the control relay).  Projector 1 was right per Mark's description of how it should work, so just make sure 2/3/4 work like 1.
+CAL speakers: haven't really looked at them yet to see what they're doing, what control they need.
+
+TP layouts: talk to Thomas.  There's a consultant description of how the panels should work and how they should look, calls out for an older template that was going to cost a small fortune to adapt to the current crestron resolutions, but the consultant ok'ed us making our own layouts (pending approval after we make them).  Thomas has stuck a few images in the dropbox folder...

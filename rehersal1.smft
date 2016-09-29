@@ -1,0 +1,3 @@
+<Device Model="MPC-M5">
+   <Network Type="Ethernet" Id="07"/>
+</Device>

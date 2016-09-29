@@ -1,0 +1,310 @@
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+ram              0x80000000         0x00500000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+                0x00000000                __DYNAMIC=0x0
+                0x00400000                PROVIDE (__stack, 0x400000)
+                0x00000000                PROVIDE (hardware_init_hook, 0x0)
+                0x00000000                PROVIDE (_hardware_init_hook, 0x0)
+                0x00000000                PROVIDE (software_init_hook, 0x0)
+                0x00000000                PROVIDE (_software_init_hook, 0x0)
+
+.text           0x80000000    0x12590
+ *(.text)
+ .text          0x80000000     0xb27c S2_Sharp_LC_70LE745U_v1_0_Processor.o
+                0x80006a8e                S2_Sharp_LC_70LE745U_v1_0_ProcessorEventHandler0000A
+                0x80009fa4                S2_Sharp_LC_70LE745U_v1_0_ProcessorEventHandler0000F
+                0x80006762                S2_Sharp_LC_70LE745U_v1_0_ProcessorEventHandler00008
+                0x800068f8                S2_Sharp_LC_70LE745U_v1_0_ProcessorEventHandler00009
+                0x8000a99a                S2_Sharp_LC_70LE745U_v1_0_ProcessorEventHandler00010
+                0x80005f10                S2_Sharp_LC_70LE745U_v1_0_ProcessorEventHandler00003
+                0x80006f50                S2_Sharp_LC_70LE745U_v1_0_ProcessorEventHandler0000D
+                0x800091c0                S2_Sharp_LC_70LE745U_v1_0_ProcessorEventHandler0000E
+                0x80005a12                S2_Sharp_LC_70LE745U_v1_0_ProcessorEventHandler00000
+                0x80006264                S2_Sharp_LC_70LE745U_v1_0_ProcessorEventHandler00005
+                0x80005bbc                S2_Sharp_LC_70LE745U_v1_0_ProcessorEventHandler00001
+                0x8000add6                S2_Sharp_LC_70LE745U_v1_0_Processor_EventHandler
+                0x80006c24                S2_Sharp_LC_70LE745U_v1_0_ProcessorEventHandler0000B
+                0x800060ba                S2_Sharp_LC_70LE745U_v1_0_ProcessorEventHandler00004
+                0x80006dba                S2_Sharp_LC_70LE745U_v1_0_ProcessorEventHandler0000C
+                0x8000640e                S2_Sharp_LC_70LE745U_v1_0_ProcessorEventHandler00006
+                0x800065b8                S2_Sharp_LC_70LE745U_v1_0_ProcessorEventHandler00007
+                0x8000af2a                S2_Sharp_LC_70LE745U_v1_0_Processor_main
+                0x80005d66                S2_Sharp_LC_70LE745U_v1_0_ProcessorEventHandler00002
+ .text          0x8000b27c     0x5836 library.o
+                0x8000f468                RotateRightLong
+                0x8000fa76                IsSystem
+                0x8000f3cc                Seed
+                0x8000ccc4                Remove
+                0x8000f048                Ltoa
+                0x8000ed74                Atoi
+                0x8000e0dc                InitRampInfoArray
+                0x8000f822                Right
+                0x80010852                LockInputSema
+                0x8000f2f6                Mod
+                0x8000f4de                Getc
+                0x8000f22a                SMuldiv
+                0x8000fa58                IsHidden
+                0x8000f10e                Min
+                0x80010666                hextosi
+                0x8000fbfc                WriteIntegerArray
+                0x80010172                GetSignedIntArrayElementPtr
+                0x8000ea96                CheckStructArray
+                0x8001067a                hextosl
+                0x8000fd82                WriteSignedIntegerArray
+                0x8000e75e                InitStringParamArray
+                0x8000da30                ReadSignedLongIntegerArray
+                0x8000c952                GatherToDelimiter
+                0x8000e582                InitStringArray
+                0x8000f0e8                Max
+                0x8000fab2                IsReadOnly
+                0x8000f1f2                SMax
+                0x8000caf6                GatherByLength
+                0x8000ef82                Chr
+                0x8000fbd4                ReadSignedLongInteger
+                0x8000f000                Itohex
+                0x8000ea08                GetStructArrayElement
+                0x8000ecfc                UNS_SetByte
+                0x8000f7f6                ReverseFindi
+                0x8000ded8                ReadStringArray
+                0x8000ff82                GetIntArrayElementPtr
+                0x8000f632                Lower
+                0x8000f3e8                RotateLeft
+                0x8001079a                ResizeIfAutogrow
+                0x8000e208                CheckInputArray
+                0x8000b7ea                ResizeStringArray
+                0x8000ef14                Atosl
+                0x8000ed3c                High
+                0x8000f398                Rnd
+                0x8000f2ba                UMod
+                0x8000f43e                RotateLeftLong
+                0x800108c6                FindNumericChar
+                0x800103ca                CheckIOArrayBounds2
+                0x8000fa10                MakeProgramFilename
+                0x8000f20e                SMin
+                0x8000f566                Left
+                0x8000f4a8                CheckBufferThreshold
+                0x8000fb8c                ReadSignedInteger
+                0x8000ed66                LowWord
+                0x8000b27c                Bit
+                0x8000fb3c                ReadLongInteger
+                0x8000eb7a                Byte
+                0x8001007a                GetLongArrayElementPtr
+                0x8000f7c8                ReverseFind
+                0x8000fa26                GetSeries
+                0x80010992                InitTcpServer
+                0x8000f61a                Len
+                0x8001049a                InitializeRampInfoInternal
+                0x8000f134                Divide
+                0x8000ee80                Atol
+                0x8000fa1c                GetModelNumber
+                0x80010362                CheckIOArrayBounds
+                0x8000e262                CheckStringInputArray
+                0x8000fe44                WriteSignedLongIntegerArray
+                0x8000e952                GetStringArrayElement
+                0x8000f08c                Ltohex
+                0x8000efb8                Itoa
+                0x8000f412                RotateRight
+                0x8000cfb2                InternalReverseFind
+                0x8000fb1c                WriteLongInteger
+                0x8000e486                InitDynamicStringStruct
+                0x8000e378                SetStringArray
+                0x8000d80e                ReadSignedIntegerArray
+                0x8000e2bc                SetOutputArray
+                0x8000facc                WriteInteger
+                0x8000e8e6                InitStructDynamicArray
+                0x8000d23c                SetString
+                0x8000f332                Random
+                0x8000fb64                WriteSignedInteger
+                0x8000b4e0                Find
+                0x8000fa30                GetProgramNumber
+                0x8000f706                Mid
+                0x80010904                InitTcpClient
+                0x8000c3ce                ResizeStructArray
+                0x8001026a                GetSignedLongArrayElementPtr
+                0x8001068c                hextol
+                0x8000dc52                ReadString
+                0x8000e618                InitDynamicStringArray
+                0x80010772                UpperChar
+                0x8000ee10                Atosi
+                0x8000faf4                ReadInteger
+                0x8000f1a6                Muldiv
+                0x8000e32a                SetStringOutputArray
+                0x8000ff08                WriteString
+                0x8000be42                ResizeIntegerArray
+                0x8000e1d0                InitInOutArray
+                0x8000e826                InitNvramStringArray
+                0x8000f0d0                Abs
+                0x8000f276                SDivide
+                0x8000d3cc                ReadIntegerArray
+                0x8000b38c                CompareStrings
+                0x8001074a                LowerChar
+                0x80010a22                InitUdpSocket
+                0x8000f490                ClearBuffer
+                0x8000f8de                Upper
+                0x8000e8c2                InitStructArray
+                0x8000f9b4                MakeLower
+                0x8000fa94                IsVolume
+                0x8000ce1e                RemoveByLength
+                0x8000eb12                CheckStringOutputArrayIndex
+                0x8000fcbe                WriteLongIntegerArray
+                0x80010546                InitRampInfoStructArray
+                0x8000ed58                HighWord
+                0x8000b654                ResizeString
+                0x8000fa3a                IsDirectory
+                0x8000d5ec                ReadLongIntegerArray
+                0x8000ed4a                Low
+                0x8000c7f8                Gather
+                0x8000f9e2                MakeUpper
+                0x8000e448                InitStringStruct
+                0x80010432                CheckStringArrayBounds
+                0x8000f178                CheckDenominator
+                0x8001064e                hextoi
+                0x8000dd70                WriteStringArray
+                0x8000ec3a                SetByte
+                0x800104f0                InitializeRampInfo
+                0x8001088c                UnLockInputSema
+                0x8000fbb4                WriteSignedLongInteger
+                0x8000e53a                InitNvramStringStruct
+ *fill*         0x80010ab2        0xe
+                0x80010ac0                .=ALIGN(0x10)
+ *(.eh_frame)
+                0x80010ac0                .=ALIGN(0x10)
+ *(.gnu.linkonce.t.*)
+                0x80010ac0                .=ALIGN(0x4)
+                0x80010ac0                __CTOR_LIST__=.
+                0x80010ac0                ___CTOR_LIST__=.
+                0x80010ac0        0x4 LONG 0x0 (((__CTOR_END__-__CTOR_LIST__)/0x4)-0x2)
+ *(.ctors)
+                0x80010ac4        0x4 LONG 0x0
+                0x80010ac8                __CTOR_END__=.
+                0x80010ac8                __DTOR_LIST__=.
+                0x80010ac8                ___DTOR_LIST__=.
+                0x80010ac8        0x4 LONG 0x0 (((__DTOR_END__-__DTOR_LIST__)/0x4)-0x2)
+ *(.dtors)
+                0x80010acc        0x4 LONG 0x0
+                0x80010ad0                __DTOR_END__=.
+ *(.rodata)
+ .rodata        0x80010ad0      0xe5c S2_Sharp_LC_70LE745U_v1_0_Processor.o
+ .rodata        0x8001192c      0xc54 library.o
+ *(.gcc_except_table)
+                0x80012580                .=ALIGN(0x2)
+                0x80012580                __INIT_SECTION__=.
+                0x80012580        0x4 LONG 0x4e560000
+ *(.init)
+                0x80012584        0x2 SHORT 0x4e5e
+                0x80012586        0x2 SHORT 0x4e75
+                0x80012588                __FINI_SECTION__=.
+                0x80012588        0x4 LONG 0x4e560000
+ *(.fini)
+                0x8001258c        0x2 SHORT 0x4e5e
+                0x8001258e        0x2 SHORT 0x4e75
+ *(.lit)
+                0x80012590                .=ALIGN(0x10)
+                0x80012590                _etext=.
+                0x80012590                etext=.
+
+.data           0x80012590        0x0
+                0x80012590                copy_start=.
+ *(.shdata)
+ *(.data)
+ *(.gnu.linkonce.d.*)
+                0x80012590                .=ALIGN(0x10)
+                0x80012590                _edata=.
+                0x80012590                copy_end=.
+
+.got
+ *(.got.plt)
+ *(.got)
+
+EntryList       0x80012590      0x110
+ *(EntryList)
+ EntryList      0x80012590      0x110 S2_Sharp_LC_70LE745U_v1_0_Processor.o
+                0x80012590                S2_Sharp_LC_70LE745U_v1_0_Processor_Entry
+                0x800126a0                .=ALIGN(0x4)
+
+FunctionList    0x800126a0        0x4
+ *(FunctionList)
+ FunctionList   0x800126a0        0x4 globals.o
+                0x800126a0                g_pFunctions
+                0x800126a4                .=ALIGN(0x4)
+
+.bss            0x800126a4        0x0
+                0x800126a4                .=ALIGN(0x4)
+                0x800126a4                __bss_start=.
+ *(.shbss)
+ *(.bss)
+ *(COMMON)
+                0x800126a8                _end=ALIGN(0x8)
+                0x800126a8                __end=_end
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+LOAD S2_Sharp_LC_70LE745U_v1_0_Processor.o
+LOAD globals.o
+LOAD library.o
+OUTPUT(_S2_rehersal1.spl elf32-m68k)
+
+.comment        0x800126a4       0x72
+ .comment       0x800126a4       0x26 S2_Sharp_LC_70LE745U_v1_0_Processor.o
+ .comment       0x800126ca       0x26 globals.o
+ .comment       0x800126f0       0x26 library.o

@@ -1,0 +1,14 @@
+<Device Model="PRO3.">
+   <Network Type="Cresnet" Id="04"/>
+   <Network Type="Ethernet" Id="05">
+      <Device Model="TSW-1050" DeviceId="03" Name="TSW-1050 Prayer Hall"/>
+      <Device Model="XPanel 2.0 Smart Graphics" DeviceId="06" Name="XPanel 2.0 Smart Graphics Prayer Hall"/>
+      <Device Model="DM-MD16x16" DeviceId="09"/>
+      <Device Model="DM-RMC-SCALER-C" DeviceId="0A" Name="Scalar 1"/>
+      <Device Model="DM-RMC-SCALER-C" DeviceId="0B" Name="Scalar 2"/>
+      <Device Model="DM-RMC-SCALER-C" DeviceId="0C" Name="Scalar 3"/>
+      <Device Model="DM-RMC-SCALER-C" DeviceId="0D" Name="Scalar 4"/>
+      <Device Model="TSW-1050" DeviceId="13" Name="TSW-1050 Plaza"/>
+      <Device Model="XPanel 2.0 Smart Graphics" DeviceId="15" Name="XPanel 2.0 Smart Graphics Plaza"/>
+   </Network>
+</Device>

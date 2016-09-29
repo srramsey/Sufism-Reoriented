@@ -1,0 +1,664 @@
+[
+ObjTp=FSgntr
+Sgntr=SGD
+RelVrs=3
+VTProeVer=6.1.02
+Schema=1
+CRCGUID=0163D81B-50BB-401E-A346-8F7690F7CC21
+]
+;================================================================================
+[
+ObjTp=Hd
+ProjectFile=Sufism_Reoriented.vtp
+VtpGuid=2A992875-6E87-4B56-AFAC-235741DC6009
+]
+;================================================================================
+[
+ObjTp=Symbol
+Name=Sufism_Reoriented_Video_Video Router.ced
+Hint=Video Router (Smart Object ID=1)
+Code=1
+SGControlType=Video Switcher
+SGControlName=Video Router
+GUID=70872FCC-3F64-4DBD-9A4F-574C95075C54
+SmplCName=Sufism_Reoriented_Video_Video Router.ced
+SMWRev=4.02.19
+Expand=expand_random
+HelpID=10016
+;Define the number of inputs, outputs and parameters
+MinVariableInputs=16
+MaxVariableInputs=16
+MinVariableOutputs=16
+MaxVariableOutputs=16
+NumFixedParams=1
+MinVariableInputsList2=17
+MaxVariableInputsList2=17
+MinVariableOutputsList2=17
+MaxVariableOutputsList2=17
+MinVariableInputsList3=0
+MaxVariableInputsList3=0
+MinVariableOutputsList3=0
+MaxVariableOutputsList3=0
+;Define the cues, and signal types  each input, output and parameter.
+InputCue1=[~UNUSED3~]
+InputSigType1=Digital
+OutputCue1=Screen 1 Source Changed
+OutputSigType1=Digital
+InputCue2=[~UNUSED3~]
+InputSigType2=Digital
+OutputCue2=Screen 2 Source Changed
+OutputSigType2=Digital
+InputCue3=[~UNUSED3~]
+InputSigType3=Digital
+OutputCue3=Screen 3 Source Changed
+OutputSigType3=Digital
+InputCue4=[~UNUSED3~]
+InputSigType4=Digital
+OutputCue4=Screen 4 Source Changed
+OutputSigType4=Digital
+InputCue5=[~UNUSED3~]
+InputSigType5=Digital
+OutputCue5=Screen 5 Source Changed
+OutputSigType5=Digital
+InputCue6=[~UNUSED3~]
+InputSigType6=Digital
+OutputCue6=Screen 6 Source Changed
+OutputSigType6=Digital
+InputCue7=[~UNUSED3~]
+InputSigType7=Digital
+OutputCue7=Screen 7 Source Changed
+OutputSigType7=Digital
+InputCue8=[~UNUSED3~]
+InputSigType8=Digital
+OutputCue8=Screen 8 Source Changed
+OutputSigType8=Digital
+InputCue9=[~UNUSED3~]
+InputSigType9=Digital
+OutputCue9=Screen 9 Source Changed
+OutputSigType9=Digital
+InputCue10=[~UNUSED3~]
+InputSigType10=Digital
+OutputCue10=Screen 10 Source Changed
+OutputSigType10=Digital
+InputCue11=[~UNUSED3~]
+InputSigType11=Digital
+OutputCue11=Screen 11 Source Changed
+OutputSigType11=Digital
+InputCue12=[~UNUSED3~]
+InputSigType12=Digital
+OutputCue12=Screen 12 Source Changed
+OutputSigType12=Digital
+InputCue13=[~UNUSED3~]
+InputSigType13=Digital
+OutputCue13=Screen 13 Source Changed
+OutputSigType13=Digital
+InputCue14=[~UNUSED3~]
+InputSigType14=Digital
+OutputCue14=Screen 14 Source Changed
+OutputSigType14=Digital
+InputCue15=[~UNUSED3~]
+InputSigType15=Digital
+OutputCue15=Screen 15 Source Changed
+OutputSigType15=Digital
+InputCue16=[~UNUSED3~]
+InputSigType16=Digital
+OutputCue16=Screen 16 Source Changed
+OutputSigType16=Digital
+InputList2Cue1=Number of visible screens
+InputList2SigType1=Analog
+OutputList2Cue1=[~UNUSED3~]
+OutputList2SigType1=Analog
+InputList2Cue2=Screen 1 Source Selection
+InputList2SigType2=Analog
+OutputList2Cue2=Screen 1 Source Selection
+OutputList2SigType2=Analog
+InputList2Cue3=Screen 2 Source Selection
+InputList2SigType3=Analog
+OutputList2Cue3=Screen 2 Source Selection
+OutputList2SigType3=Analog
+InputList2Cue4=Screen 3 Source Selection
+InputList2SigType4=Analog
+OutputList2Cue4=Screen 3 Source Selection
+OutputList2SigType4=Analog
+InputList2Cue5=Screen 4 Source Selection
+InputList2SigType5=Analog
+OutputList2Cue5=Screen 4 Source Selection
+OutputList2SigType5=Analog
+InputList2Cue6=Screen 5 Source Selection
+InputList2SigType6=Analog
+OutputList2Cue6=Screen 5 Source Selection
+OutputList2SigType6=Analog
+InputList2Cue7=Screen 6 Source Selection
+InputList2SigType7=Analog
+OutputList2Cue7=Screen 6 Source Selection
+OutputList2SigType7=Analog
+InputList2Cue8=Screen 7 Source Selection
+InputList2SigType8=Analog
+OutputList2Cue8=Screen 7 Source Selection
+OutputList2SigType8=Analog
+InputList2Cue9=Screen 8 Source Selection
+InputList2SigType9=Analog
+OutputList2Cue9=Screen 8 Source Selection
+OutputList2SigType9=Analog
+InputList2Cue10=Screen 9 Source Selection
+InputList2SigType10=Analog
+OutputList2Cue10=Screen 9 Source Selection
+OutputList2SigType10=Analog
+InputList2Cue11=Screen 10 Source Selection
+InputList2SigType11=Analog
+OutputList2Cue11=Screen 10 Source Selection
+OutputList2SigType11=Analog
+InputList2Cue12=Screen 11 Source Selection
+InputList2SigType12=Analog
+OutputList2Cue12=Screen 11 Source Selection
+OutputList2SigType12=Analog
+InputList2Cue13=Screen 12 Source Selection
+InputList2SigType13=Analog
+OutputList2Cue13=Screen 12 Source Selection
+OutputList2SigType13=Analog
+InputList2Cue14=Screen 13 Source Selection
+InputList2SigType14=Analog
+OutputList2Cue14=Screen 13 Source Selection
+OutputList2SigType14=Analog
+InputList2Cue15=Screen 14 Source Selection
+InputList2SigType15=Analog
+OutputList2Cue15=Screen 14 Source Selection
+OutputList2SigType15=Analog
+InputList2Cue16=Screen 15 Source Selection
+InputList2SigType16=Analog
+OutputList2Cue16=Screen 15 Source Selection
+OutputList2SigType16=Analog
+InputList2Cue17=Screen 16 Source Selection
+InputList2SigType17=Analog
+OutputList2Cue17=Screen 16 Source Selection
+OutputList2SigType17=Analog
+ParamCue1=SmartObjectId
+ParamSigType1=Constant
+MPp=1
+Pp1=1
+CedH=1
+SmartObjId=1d
+]
+; Parameter Properties for Smart Object ID
+[
+ObjTp=Dp
+H=1
+Tp=1
+HD=TRUE
+DV=1d
+NF=1
+DNF=1
+EncFmt=0
+DVLF=1
+Sgn=0
+]
+; Smart Objects Definition section
+[
+ObjTp=CED
+H=1
+Name=Sufism_Reoriented_Video_Video Router.ced
+;Cedver is the version of the Smart Graphics control, not the CED file format.
+;If the control definition changes, increment this.
+CedVer=1
+]
+;================================================================================
+[
+ObjTp=Symbol
+Name=Sufism_Reoriented_Lighting_Lighting Presets 1.ced
+Hint=Lighting Presets 1 (Smart Object ID=27)
+Code=2
+SGControlType=Vertical Tab Button
+SGControlName=Lighting Presets 1
+GUID=3FEE1B18-A825-4236-B0AA-880E7169979E
+SmplCName=Sufism_Reoriented_Lighting_Lighting Presets 1.ced
+SMWRev=4.02.19
+Expand=expand_random
+HelpID=10074
+;Define the number of inputs, outputs and parameters
+MinVariableInputs=8
+MaxVariableInputs=8
+MinVariableOutputs=8
+MaxVariableOutputs=8
+NumFixedParams=1
+MinVariableInputsList2=0
+MaxVariableInputsList2=0
+MinVariableOutputsList2=0
+MaxVariableOutputsList2=0
+MinVariableInputsList3=0
+MaxVariableInputsList3=0
+MinVariableOutputsList3=0
+MaxVariableOutputsList3=0
+;Define the cues, and signal types  each input, output and parameter.
+InputCue1=[~UNUSED3~]
+InputSigType1=Digital
+OutputCue1=Tab Button 1 Press
+OutputSigType1=Digital
+InputCue2=Tab Button 1 Select
+InputSigType2=Digital
+OutputCue2=[~UNUSED3~]
+OutputSigType2=Digital
+InputCue3=[~UNUSED3~]
+InputSigType3=Digital
+OutputCue3=Tab Button 2 Press
+OutputSigType3=Digital
+InputCue4=Tab Button 2 Select
+InputSigType4=Digital
+OutputCue4=[~UNUSED3~]
+OutputSigType4=Digital
+InputCue5=[~UNUSED3~]
+InputSigType5=Digital
+OutputCue5=Tab Button 3 Press
+OutputSigType5=Digital
+InputCue6=Tab Button 3 Select
+InputSigType6=Digital
+OutputCue6=[~UNUSED3~]
+OutputSigType6=Digital
+InputCue7=[~UNUSED3~]
+InputSigType7=Digital
+OutputCue7=Tab Button 4 Press
+OutputSigType7=Digital
+InputCue8=Tab Button 4 Select
+InputSigType8=Digital
+OutputCue8=[~UNUSED3~]
+OutputSigType8=Digital
+ParamCue1=SmartObjectId
+ParamSigType1=Constant
+MPp=1
+Pp1=2
+CedH=2
+SmartObjId=27d
+]
+; Parameter Properties for Smart Object ID
+[
+ObjTp=Dp
+H=2
+Tp=1
+HD=TRUE
+DV=27d
+NF=1
+DNF=1
+EncFmt=0
+DVLF=1
+Sgn=0
+]
+; Smart Objects Definition section
+[
+ObjTp=CED
+H=2
+Name=Sufism_Reoriented_Lighting_Lighting Presets 1.ced
+;Cedver is the version of the Smart Graphics control, not the CED file format.
+;If the control definition changes, increment this.
+CedVer=1
+]
+;================================================================================
+[
+ObjTp=Symbol
+Name=Sufism_Reoriented_Lighting_Lighting Presets_2.ced
+Hint=Lighting Presets_2 (Smart Object ID=28)
+Code=3
+SGControlType=Vertical Tab Button
+SGControlName=Lighting Presets_2
+GUID=5D2CFD48-16AE-4D2B-9430-FD3417151A8C
+SmplCName=Sufism_Reoriented_Lighting_Lighting Presets_2.ced
+SMWRev=4.02.19
+Expand=expand_random
+HelpID=10074
+;Define the number of inputs, outputs and parameters
+MinVariableInputs=8
+MaxVariableInputs=8
+MinVariableOutputs=8
+MaxVariableOutputs=8
+NumFixedParams=1
+MinVariableInputsList2=0
+MaxVariableInputsList2=0
+MinVariableOutputsList2=0
+MaxVariableOutputsList2=0
+MinVariableInputsList3=0
+MaxVariableInputsList3=0
+MinVariableOutputsList3=0
+MaxVariableOutputsList3=0
+;Define the cues, and signal types  each input, output and parameter.
+InputCue1=[~UNUSED3~]
+InputSigType1=Digital
+OutputCue1=Tab Button 1 Press
+OutputSigType1=Digital
+InputCue2=Tab Button 1 Select
+InputSigType2=Digital
+OutputCue2=[~UNUSED3~]
+OutputSigType2=Digital
+InputCue3=[~UNUSED3~]
+InputSigType3=Digital
+OutputCue3=Tab Button 2 Press
+OutputSigType3=Digital
+InputCue4=Tab Button 2 Select
+InputSigType4=Digital
+OutputCue4=[~UNUSED3~]
+OutputSigType4=Digital
+InputCue5=[~UNUSED3~]
+InputSigType5=Digital
+OutputCue5=Tab Button 3 Press
+OutputSigType5=Digital
+InputCue6=Tab Button 3 Select
+InputSigType6=Digital
+OutputCue6=[~UNUSED3~]
+OutputSigType6=Digital
+InputCue7=[~UNUSED3~]
+InputSigType7=Digital
+OutputCue7=Tab Button 4 Press
+OutputSigType7=Digital
+InputCue8=Tab Button 4 Select
+InputSigType8=Digital
+OutputCue8=[~UNUSED3~]
+OutputSigType8=Digital
+ParamCue1=SmartObjectId
+ParamSigType1=Constant
+MPp=1
+Pp1=3
+CedH=3
+SmartObjId=28d
+]
+; Parameter Properties for Smart Object ID
+[
+ObjTp=Dp
+H=3
+Tp=1
+HD=TRUE
+DV=28d
+NF=1
+DNF=1
+EncFmt=0
+DVLF=1
+Sgn=0
+]
+; Smart Objects Definition section
+[
+ObjTp=CED
+H=3
+Name=Sufism_Reoriented_Lighting_Lighting Presets_2.ced
+;Cedver is the version of the Smart Graphics control, not the CED file format.
+;If the control definition changes, increment this.
+CedVer=1
+]
+;================================================================================
+[
+ObjTp=Symbol
+Name=Sufism_Reoriented_Lighting_Lighting Presets_3.ced
+Hint=Lighting Presets_3 (Smart Object ID=29)
+Code=4
+SGControlType=Vertical Tab Button
+SGControlName=Lighting Presets_3
+GUID=BA4BBE32-B224-4458-B291-779EB99DB86E
+SmplCName=Sufism_Reoriented_Lighting_Lighting Presets_3.ced
+SMWRev=4.02.19
+Expand=expand_random
+HelpID=10074
+;Define the number of inputs, outputs and parameters
+MinVariableInputs=8
+MaxVariableInputs=8
+MinVariableOutputs=8
+MaxVariableOutputs=8
+NumFixedParams=1
+MinVariableInputsList2=0
+MaxVariableInputsList2=0
+MinVariableOutputsList2=0
+MaxVariableOutputsList2=0
+MinVariableInputsList3=0
+MaxVariableInputsList3=0
+MinVariableOutputsList3=0
+MaxVariableOutputsList3=0
+;Define the cues, and signal types  each input, output and parameter.
+InputCue1=[~UNUSED3~]
+InputSigType1=Digital
+OutputCue1=Tab Button 1 Press
+OutputSigType1=Digital
+InputCue2=Tab Button 1 Select
+InputSigType2=Digital
+OutputCue2=[~UNUSED3~]
+OutputSigType2=Digital
+InputCue3=[~UNUSED3~]
+InputSigType3=Digital
+OutputCue3=Tab Button 2 Press
+OutputSigType3=Digital
+InputCue4=Tab Button 2 Select
+InputSigType4=Digital
+OutputCue4=[~UNUSED3~]
+OutputSigType4=Digital
+InputCue5=[~UNUSED3~]
+InputSigType5=Digital
+OutputCue5=Tab Button 3 Press
+OutputSigType5=Digital
+InputCue6=Tab Button 3 Select
+InputSigType6=Digital
+OutputCue6=[~UNUSED3~]
+OutputSigType6=Digital
+InputCue7=[~UNUSED3~]
+InputSigType7=Digital
+OutputCue7=Tab Button 4 Press
+OutputSigType7=Digital
+InputCue8=Tab Button 4 Select
+InputSigType8=Digital
+OutputCue8=[~UNUSED3~]
+OutputSigType8=Digital
+ParamCue1=SmartObjectId
+ParamSigType1=Constant
+MPp=1
+Pp1=4
+CedH=4
+SmartObjId=29d
+]
+; Parameter Properties for Smart Object ID
+[
+ObjTp=Dp
+H=4
+Tp=1
+HD=TRUE
+DV=29d
+NF=1
+DNF=1
+EncFmt=0
+DVLF=1
+Sgn=0
+]
+; Smart Objects Definition section
+[
+ObjTp=CED
+H=4
+Name=Sufism_Reoriented_Lighting_Lighting Presets_3.ced
+;Cedver is the version of the Smart Graphics control, not the CED file format.
+;If the control definition changes, increment this.
+CedVer=1
+]
+;================================================================================
+[
+ObjTp=Symbol
+Name=Sufism_Reoriented_Lighting_Lighting Presets_4.ced
+Hint=Lighting Presets_4 (Smart Object ID=30)
+Code=5
+SGControlType=Vertical Tab Button
+SGControlName=Lighting Presets_4
+GUID=A92C578F-9384-4867-85AF-B30220D6FA47
+SmplCName=Sufism_Reoriented_Lighting_Lighting Presets_4.ced
+SMWRev=4.02.19
+Expand=expand_random
+HelpID=10074
+;Define the number of inputs, outputs and parameters
+MinVariableInputs=8
+MaxVariableInputs=8
+MinVariableOutputs=8
+MaxVariableOutputs=8
+NumFixedParams=1
+MinVariableInputsList2=0
+MaxVariableInputsList2=0
+MinVariableOutputsList2=0
+MaxVariableOutputsList2=0
+MinVariableInputsList3=0
+MaxVariableInputsList3=0
+MinVariableOutputsList3=0
+MaxVariableOutputsList3=0
+;Define the cues, and signal types  each input, output and parameter.
+InputCue1=[~UNUSED3~]
+InputSigType1=Digital
+OutputCue1=Tab Button 1 Press
+OutputSigType1=Digital
+InputCue2=Tab Button 1 Select
+InputSigType2=Digital
+OutputCue2=[~UNUSED3~]
+OutputSigType2=Digital
+InputCue3=[~UNUSED3~]
+InputSigType3=Digital
+OutputCue3=Tab Button 2 Press
+OutputSigType3=Digital
+InputCue4=Tab Button 2 Select
+InputSigType4=Digital
+OutputCue4=[~UNUSED3~]
+OutputSigType4=Digital
+InputCue5=[~UNUSED3~]
+InputSigType5=Digital
+OutputCue5=Tab Button 3 Press
+OutputSigType5=Digital
+InputCue6=Tab Button 3 Select
+InputSigType6=Digital
+OutputCue6=[~UNUSED3~]
+OutputSigType6=Digital
+InputCue7=[~UNUSED3~]
+InputSigType7=Digital
+OutputCue7=Tab Button 4 Press
+OutputSigType7=Digital
+InputCue8=Tab Button 4 Select
+InputSigType8=Digital
+OutputCue8=[~UNUSED3~]
+OutputSigType8=Digital
+ParamCue1=SmartObjectId
+ParamSigType1=Constant
+MPp=1
+Pp1=5
+CedH=5
+SmartObjId=30d
+]
+; Parameter Properties for Smart Object ID
+[
+ObjTp=Dp
+H=5
+Tp=1
+HD=TRUE
+DV=30d
+NF=1
+DNF=1
+EncFmt=0
+DVLF=1
+Sgn=0
+]
+; Smart Objects Definition section
+[
+ObjTp=CED
+H=5
+Name=Sufism_Reoriented_Lighting_Lighting Presets_4.ced
+;Cedver is the version of the Smart Graphics control, not the CED file format.
+;If the control definition changes, increment this.
+CedVer=1
+]
+;================================================================================
+[
+ObjTp=Symbol
+Name=Sufism_Reoriented_Admin_New_Adv Num Keypad.ced
+Hint=Adv Num Keypad (Smart Object ID=3)
+Code=6
+SGControlType=Simple Keypad
+SGControlName=Adv Num Keypad
+GUID=62FBF873-1F44-44B9-BA31-BC612DDEC0F0
+SmplCName=Sufism_Reoriented_Admin_New_Adv Num Keypad.ced
+SMWRev=4.02.19
+Expand=expand_random
+HelpID=10061
+;Define the number of inputs, outputs and parameters
+MinVariableInputs=12
+MaxVariableInputs=12
+MinVariableOutputs=12
+MaxVariableOutputs=12
+NumFixedParams=1
+MinVariableInputsList2=0
+MaxVariableInputsList2=0
+MinVariableOutputsList2=0
+MaxVariableOutputsList2=0
+MinVariableInputsList3=0
+MaxVariableInputsList3=0
+MinVariableOutputsList3=0
+MaxVariableOutputsList3=0
+;Define the cues, and signal types  each input, output and parameter.
+InputCue1=[~UNUSED3~]
+InputSigType1=Digital
+OutputCue1=1
+OutputSigType1=Digital
+InputCue2=[~UNUSED3~]
+InputSigType2=Digital
+OutputCue2=2
+OutputSigType2=Digital
+InputCue3=[~UNUSED3~]
+InputSigType3=Digital
+OutputCue3=3
+OutputSigType3=Digital
+InputCue4=[~UNUSED3~]
+InputSigType4=Digital
+OutputCue4=4
+OutputSigType4=Digital
+InputCue5=[~UNUSED3~]
+InputSigType5=Digital
+OutputCue5=5
+OutputSigType5=Digital
+InputCue6=[~UNUSED3~]
+InputSigType6=Digital
+OutputCue6=6
+OutputSigType6=Digital
+InputCue7=[~UNUSED3~]
+InputSigType7=Digital
+OutputCue7=7
+OutputSigType7=Digital
+InputCue8=[~UNUSED3~]
+InputSigType8=Digital
+OutputCue8=8
+OutputSigType8=Digital
+InputCue9=[~UNUSED3~]
+InputSigType9=Digital
+OutputCue9=9
+OutputSigType9=Digital
+InputCue10=[~UNUSED3~]
+InputSigType10=Digital
+OutputCue10=0
+OutputSigType10=Digital
+InputCue11=[~UNUSED3~]
+InputSigType11=Digital
+OutputCue11=Clear
+OutputSigType11=Digital
+InputCue12=[~UNUSED3~]
+InputSigType12=Digital
+OutputCue12=Store
+OutputSigType12=Digital
+ParamCue1=SmartObjectId
+ParamSigType1=Constant
+MPp=1
+Pp1=6
+CedH=6
+SmartObjId=3d
+]
+; Parameter Properties for Smart Object ID
+[
+ObjTp=Dp
+H=6
+Tp=1
+HD=TRUE
+DV=3d
+NF=1
+DNF=1
+EncFmt=0
+DVLF=1
+Sgn=0
+]
+; Smart Objects Definition section
+[
+ObjTp=CED
+H=6
+Name=Sufism_Reoriented_Admin_New_Adv Num Keypad.ced
+;Cedver is the version of the Smart Graphics control, not the CED file format.
+;If the control definition changes, increment this.
+CedVer=1
+]
